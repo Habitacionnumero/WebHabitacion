@@ -37,7 +37,7 @@ export default {
     <div class="max-width padding">
       <img
         v-if="esp"
-        src="/img/about_esp.png"
+        src="/img/about_info_es.png"
         alt="texto about español"
         usemap="#pomo"
       />

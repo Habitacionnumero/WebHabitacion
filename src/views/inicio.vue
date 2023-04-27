@@ -5,36 +5,34 @@
           <router-link :to="{ name: 'home' }"
             ><img  src="/img/titulo2.png" alt=""
           /></router-link>
-
-
-        </div>
-      <marquee>
-        <a href="https://rgbshop38191613162016135.com/" target = "_blank" class="banner"> <img class="avion_img" src="/img/banner.png" alt=""></a>
-      </marquee>
+      </div>
+          <marquee class="fly">
+          <a href="https://rgbshop38191613162016135.com/" target = "_blank"> <img class="avion_img" src="/img/avionetaGif2.gif" alt=""></a>
+          </marquee>
       <div class="main_top_menu">
         <div class="main_top_doors max-width">
           <router-link :to="{ name: 'instalaciones' }" 
-            ><img class="install_door" src="/img/puerta_origin.png"  alt=""
+            ><img class="install_door" src="/img/originNeon.png"  alt=""
           /></router-link>
           
           <a href="https://rgbshop38191613162016135.com" target = "_blank">
-              <img class="rgb_door" src="/img/puerta_rgb.png" alt="">
+              <img class="rgb_door" src="/img/rgbNeon.png" alt="">
           </a>
 
           <router-link :to="{ name: 'meta' }" 
-            ><img class="meta_door" src="/img/puerta_future.png" alt=""
+            ><img class="meta_door" src="/img/futureNeon.png" alt=""
           /></router-link>
 
           <router-link :to="{ name: 'instalaciones' }" class="pc"
-            ><img class="install_door" src="/img/puerta_origin.png"  alt=""
+            ><img class="install_door" src="/img/originNeon.png"  alt=""
           /></router-link>
 
           <a href="https://rgbshop38191613162016135.com/" target = "_blank" class="pc">
-              <img class="rgb_door" src="/img/puerta_rgb.png" alt="">
+              <img class="rgb_door" src="/img/rgbNeon.png" alt="">
           </a>
 
           <router-link :to="{ name: 'meta' }" class="pc"
-            ><img class="meta_door" src="/img/puerta_future.png" alt=""
+            ><img class="meta_door" src="/img/futureNeon.png" alt=""
           /></router-link>
          
           <!-- <router-link :to="{ name: 'residencias' }"
@@ -67,18 +65,20 @@
 
 <style lang="scss" scoped>
 
-
+.fly{
+  width: 100%;
+}
 .main_top {
-  min-height: 85vh;
-  background: url("/img/fondo_junto.png");
+  min-height: 88vh;
+  background: url("/img/fondo_junto_noche3.png");
   background-size: cover;
-  background-position: right 65% bottom 65% ;
+  background-position: right 65% bottom 55% ;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   //gap: 1em;
-  padding-top: 10em;
+  padding-top: 0em;
 
 }
 .main_top_menu{
@@ -86,13 +86,13 @@
 }
 
 .main_top_title{
-  margin-top: -1em;
+  margin-top: 1.1em;
   //max-width: $mx-tablet-grande;
-  max-width: 684px;
+  max-width: 835px;
 }
 .main_top_doors {
   //justify-content: center;
-  padding-top: 1em;
+  padding-top: 4.0em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr ;
 }
@@ -101,7 +101,8 @@
   background-size: cover;
   display: flex;
   justify-content: center;
-  height: 280px;
+  height: 235px;
+  margin-top: -48px;
 }
 .main_bottom{
   display: grid;
@@ -114,19 +115,19 @@
  transform: rotate(-15deg);
  position: absolute;
  top: -3em;
- right: 14em;
+ right: 10em;
  width: 300px;
 }
 .contacto {
   transform: rotate(15deg);
   top: -3em;
   width: 300px;
-  left:8em;
+  left: 8em;
 }
 .prensa {
   transform: rotate(-10deg);
   top: -3em;
-  left: 29em;
+  left: 25em;
   width: 300px;
 }
 .anuncio{
@@ -138,20 +139,20 @@
 }
 
 .banner{
-  width: 500px;
+  width: 650px;
 }
 .avion_img{
-  padding-top: 0em;
-  width: 500px;
+  padding-top: 30px;
+  height: 180px;
+  width: 750px;
   min-width: 100px;
   margin-left: 0px;
 }
-
 .meta_door, .install_door, .rgb_door{
   padding: 10px;
-  width: 280px;
-
+  width: 240px;
 }
+
 
 .pc{
   display: none;
@@ -164,36 +165,43 @@
 @media screen  and (max-width: 800px) {
 
 .main_top_title {
-  margin-top:-58px;
+  margin-top:10px;
+  width: 380px;
+}
+.main_top {
+  min-height: 95vh;
+  background: url("/img/fondo_junto_noche3.png");
+  background-size: cover;
+  background-position: right 65% bottom 65% ;
 }
 .main_top_menu {
   overflow: hidden;
   width: 100%;
-  height: 400px;  
+  height: 480px;  
+  margin-top: -40px;
   margin-right: 0px;
-
 }
 
 .avion_img {
-margin-top: 20px;
+margin-top: -50px;
 width: 500px;
 min-width: 100px;
 }
 
 .aplica {
-margin-top: 2.5em;
-right: -4em;
-max-width: 100px;
+margin-top: 2.1em;
+right: -4.7em;
+max-width: 113px;
 }
 .contacto {
-margin-top: 2.5em;
-max-width: 100px;
+margin-top: 2.1em;
+max-width: 113px;
 left: 1em;
 }
 .prensa {
-margin-top: 2.5em;
-left:1em;
-max-width: 100px;
+margin-top: 2.1em;
+left: 0.7em;
+max-width: 113px;
 }
 
 .tarjeta {
@@ -201,6 +209,7 @@ max-width: 50px;
 }
 .main_bottom_content {
 height: 150px;
+margin-top: -67px;
 }
 .pc{
 display: inline;
@@ -208,12 +217,12 @@ display: inline;
 .main_top_doors {
 animation: scroll 10s linear infinite;
 grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-margin-top: -10px;
+margin-top: -2px;
 }
 
 .meta_door, .install_door, .rgb_door{
-width: 163px;
-padding: 0px;
+width: 174px;
+padding-top: -50px;
 }
 @keyframes scroll {
 0%{
